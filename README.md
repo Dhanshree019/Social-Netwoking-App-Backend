@@ -8,7 +8,7 @@ Social Netwokimg App , developed using Django Rest Framework (DRF) with essentia
 # Functionalities:
 
 - **User Authentication:** Users can sign up using a valid email format and log in with a case-insensitive email and password. All APIs, except login and signup, require authentication.
-- **Search Users:** Search for users bykeyword.
+- **Search Users:** Search for users by search query.
 - **Friend Requests Management:** Send, accept, or reject friend requests. Prevent users from sending more than 3 friend requests within a minute.
 - **List Friends:** View a list of all accepted friend requests.
 - **Pending Requests:** View a list of received friend requests pending acceptance.
@@ -30,7 +30,7 @@ git clone https://github.com/Dhanshree019/Social-Netwoking-App-Backend.git
 5. In folder structure, there is Dockerfile and docker-compose.yml file.
 6. Open terminal in vscode and run below command
 ```sh
-docker-compose up --build
+docker-compose build
 ```
 7. After Successfully build, up all services.
 ```sh
@@ -47,7 +47,7 @@ docker-compose down
 - ${\color{lightgreen}\textnormal{POST}}$ /api/login - Login an existing user.
 
 #### Search Users:
-- ${\color{lightblue}\textnormal{GET}}$ /api/search?page={page_number}&keyword=(search_key) - Search users by search key.
+- ${\color{lightblue}\textnormal{GET}}$ /api/search?page={page_number}&keyword=(search_key) - Search users by search query.
 
 #### Friend Requests:
 - ${\color{lightgreen}\textnormal{POST}}$ /api/friend-request/send - Send a friend request.

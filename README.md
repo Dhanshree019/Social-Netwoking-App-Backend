@@ -23,7 +23,7 @@ git clone https://github.com/Dhanshree019/Social-Netwoking-App-Backend.git
 3. In folder structure, there is postman collection and environment file.
 4. Import it in your postman portal.
 > [!Note]
-> If you have multiple environments, make sure to acivate the required environment in the settings.
+> If you have multiple environments, make sure to activate the required environment in the settings.
 
 ![image](https://github.com/user-attachments/assets/1200114f-c937-4fb8-ae0f-26aaf674debc)
 

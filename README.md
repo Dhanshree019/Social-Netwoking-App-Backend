@@ -23,9 +23,10 @@ git clone https://github.com/Dhanshree019/Social-Netwoking-App-Backend.git
 3. In folder structure, there is postman collection and environment file.
 4. Import it in your postman portal.
 > [!Note]
-> If you have multiple environments, make sure to configure the required environment in the settings, as the system defaults to the pre-set environment.
+> If you have multiple environments, make sure to acivate the required environment in the settings.
 
-![image](https://github.com/user-attachments/assets/cfd0fd9e-953f-4300-a77c-0fa1f0074f02)
+![image](https://github.com/user-attachments/assets/1200114f-c937-4fb8-ae0f-26aaf674debc)
+
 
 5. In folder structure, there is Dockerfile and docker-compose.yml file.
 6. Open terminal in vscode and run below command

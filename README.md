@@ -50,8 +50,8 @@ Social Netwokimg App , developed using Django Rest Framework (DRF) with essentia
 - ${\color{lightblue}\textnormal{GET}}$ /api/search?page={page_number}&keyword=(search_key) - Search users by search key.
 
 #### Friend Requests:
-- ${\color{lightgreen}\textnormal{POST}}$ /api/friend-request/send - Send a friend request.
-- ${\color{lightgreen}\textnormal{POST}}$ /api/friend-request/accept - Accept a friend request.
-- ${\color{lightgreen}\textnormal{POST}}$ /api/friend-request/reject - Reject a friend request.
-- ${\color{lightblue}\textnormal{GET}}$  /api/friends - List friends.
-- ${\color{lightblue}\textnormal{GET}}$  /api/pending-requests - List pending friend requests.
+- ${\color{lightgreen}\textnormal{POST}}$ /api/friend-request/send/ - Send a friend request.
+- ${\color{lightgreen}\textnormal{POST}}$ /api/friend-request/accept/ - Accept a friend request.
+- ${\color{lightgreen}\textnormal{POST}}$ /api/friend-request/reject/ - Reject a friend request.
+- ${\color{lightblue}\textnormal{GET}}$  /api/friends/ - List friends.
+- ${\color{lightblue}\textnormal{GET}}$  /api/pending-requests/ - List pending friend requests.

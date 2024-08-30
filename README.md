@@ -30,15 +30,15 @@ Social Netwokimg App , developed using Django Rest Framework (DRF) with essentia
 5. In folder structure, there is Dockerfile and docker-compose.yml file.
 6. Open terminal in vscode and run below command
 ```sh
-❯ docker-compose up --build
+docker-compose up --build
 ```
 7. After Successfully build, up all services.
 ```sh
-❯ docker-compose up 
+docker-compose up 
 ```
 8. Test the api's and after testing down all services
 ```sh
-❯ docker-compose down
+docker-compose down
 ```
 
 # API Endpoints

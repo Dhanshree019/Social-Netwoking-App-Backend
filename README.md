@@ -15,15 +15,28 @@ Social Netwokimg App , developed using Django Rest Framework (DRF) with essentia
 
 ---
 # Steps To Follow
-1. Clone the repository and move to project folder
+1. Clone the repository and move to project folder.
 ```sh
 ❯ git clone https://github.com/Dhanshree019/Social-Netwoking-App-Backend.git
 ```
-2. Oprn project folder in vscode or other IDE
+2. Open project folder in vscode or other IDE.
 3. In folder structure, there is postman collection and environment file.
-4. Import it in your postman portal
+4. Import it in your postman portal.
 > [!Note]
-> If you have multiple envioroment,then don't forget to set needed enviormnt through settings because it use default set enviroment
+> If you have multiple environments, make sure to configure the required environment in the settings, as the system defaults to the pre-set environment.
 
 ![image](https://github.com/user-attachments/assets/cfd0fd9e-953f-4300-a77c-0fa1f0074f02)
 
+5. In folder structure, there is Dockerfile and docker-compose.yml file.
+6. Open terminal in vscode and run below command
+```sh
+❯ docker-compose up --build
+```
+7. After Successfully build, up all services.
+```sh
+❯ docker-compose up 
+```
+8. Test the api's and after testing down all services
+```sh
+❯ docker-compose down
+```

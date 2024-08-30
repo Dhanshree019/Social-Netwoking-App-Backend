@@ -153,7 +153,8 @@ class FriendRequestView(APIView):
 
 
             elif action == "accept":
-                friend_request = FriendRequest.objects.filter(id=rd['friend_request_id']).first()
+                friend_request = FriendRequest.objects.filter(receiver__id=request.user.id, id=rd['friend_request_id']).first()
+                print("friend request:",friend_request)
                 if friend_request == None:
                     return Response({"success": False, "message": "Friend request not found!"}, status=status.HTTP_404_NOT_FOUND)
 
@@ -162,7 +163,7 @@ class FriendRequestView(APIView):
                 return Response({"success": True, "message": "Friend request accepted!"}, status=status.HTTP_200_OK)
 
             elif action == "reject":
-                friend_request = FriendRequest.objects.filter(id=rd['friend_request_id'], is_accepted=False).first()
+                friend_request = FriendRequest.objects.filter(receiver__id=request.user.id, id=rd['friend_request_id'], is_accepted=False).first()
                 if friend_request == None:
                     return Response({"success": False, "message": "Friend request not found!"}, status=status.HTTP_404_NOT_FOUND)
 

@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    environment:
+      - DEBUG=1
+      - DJANGO_SECRET_KEY=django-insecure-_!av1pq)*f%7bud3stxz%3^frpx)fl2r!vijj8wmd^dn4@9%(8
+      - DB_NAME=sna_db
+      - DB_USER=dhanshree
+      - DB_PASSWORD=aOe0qVhgE2TA
+      - DB_HOST=ep-small-wave-a19sjar4.ap-southeast-1.aws.neon.tech
+      - DB_PORT=5432
+    depends_on:
+      - db
+
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_DB: sna_db
+      POSTGRES_USER: dhanshree
+      POSTGRES_PASSWORD: aOe0qVhgE2TA
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

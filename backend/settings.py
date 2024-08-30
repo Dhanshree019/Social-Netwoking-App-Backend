@@ -164,7 +164,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # cors settings here
 CORS_ALLOWED_ORIGINS = [
     'http://127.0.0.1:8000',
-    'https://social-networking-app.onrender.com',
 ]
 
 CORS_ORIGIN_ALLOW_ALL=True
@@ -173,7 +172,6 @@ CORS_ORIGIN_ALLOW_ALL=True
 # csrf settings
 CSRF_TRUSTED_ORIGINS = [
     'http://127.0.0.1:8000',
-    'https://social-networking-app.onrender.com',
 ]
 
 

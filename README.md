@@ -17,7 +17,7 @@ Social Netwokimg App , developed using Django Rest Framework (DRF) with essentia
 # Steps To Follow
 1. Clone the repository and move to project folder.
 ```sh
-❯ git clone https://github.com/Dhanshree019/Social-Netwoking-App-Backend.git
+git clone https://github.com/Dhanshree019/Social-Netwoking-App-Backend.git
 ```
 2. Open project folder in vscode or other IDE.
 3. In folder structure, there is postman collection and environment file.

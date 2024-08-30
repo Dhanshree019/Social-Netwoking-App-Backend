@@ -44,7 +44,7 @@ docker-compose down
 
 # API Endpoints
 #### User Authentication:
-- ${\color{lightgreen}\textnormal{POST}}$ - /api/signup - Register a new user. \
+- ${\color{lightgreen}\textnormal{POST}}$  /api/signup - Register a new user. \
   **Data**: JSON object with the following field
   - First name
   - Last name

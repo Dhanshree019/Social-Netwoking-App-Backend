@@ -1,0 +1,89 @@
+# Python bytecode files
+*.py[cod]
+__pycache__/
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.dll
+*.dylib
+*.exe
+
+# Distribution / packaging
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# If you're using PostgreSQL:
+*.pgsql
+
+# Media and static files
+mediafiles/
+staticfiles/
+
+# Virtual Environment
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+.env
+
+# VS Code settings
+.vscode/
+
+# JetBrains IDEs settings
+.idea/
+
+# macOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+
+# Coverage reports
+htmlcov/
+.coverage
+.tox
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Test reports
+.junit.xml
+
+# Translations
+*.mo
+*.pot
+
+# Mypy
+.mypy_cache/
+
+# Pyre
+.pyre/
+
+# Pyright
+.pyright/
+
+# pylint
+.pylint.d/
+
+# pyre-check
+.pyre/
+
+# End of list
+

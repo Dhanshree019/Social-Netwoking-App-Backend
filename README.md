@@ -44,15 +44,32 @@ docker-compose down
 
 # API Endpoints
 #### User Authentication:
-- ${\color{lightgreen}\textnormal{POST}}$ - /api/signup - Register a new user.
-- ${\color{lightgreen}\textnormal{POST}}$ /api/login - Login an existing user.
+- ${\color{lightgreen}\textnormal{POST}}$ - /api/signup - Register a new user. \
+  **Data**: JSON object with the following field
+  - First name
+  - Last name
+  - Email
+  - Password
+- ${\color{lightgreen}\textnormal{POST}}$ /api/login - Login an existing user. \
+  **Data**: JSON object with the following field
+  - Email
+  - Password
 
 #### Search Users:
-- ${\color{lightblue}\textnormal{GET}}$ /api/search?page={page_number}&keyword=(search_key) - Search users by search query.
+- ${\color{lightblue}\textnormal{GET}}$ /api/search?page={page_number}&keyword=(search_key) - Search users by search query.\
+  **Query Params**: [ Authorize User ]
+  - Page number
+  - Search key
 
 #### Friend Requests:
-- ${\color{lightgreen}\textnormal{POST}}$ /api/friend-request/send - Send a friend request.
-- ${\color{lightgreen}\textnormal{POST}}$ /api/friend-request/accept - Accept a friend request.
-- ${\color{lightgreen}\textnormal{POST}}$ /api/friend-request/reject - Reject a friend request.
-- ${\color{lightblue}\textnormal{GET}}$  /api/friends - List friends.
-- ${\color{lightblue}\textnormal{GET}}$  /api/pending-requests - List pending friend requests.
+- ${\color{lightgreen}\textnormal{POST}}$ /api/friend-request/send - Send a friend request. \
+  **Data**: JSON object with the following field [ Authorize User ]
+  - Receiver Id
+- ${\color{lightgreen}\textnormal{POST}}$ /api/friend-request/accept - Accept a friend request. \
+  **Data**: JSON object with the following field [ Authorize User ]
+  - Friend Request Id
+- ${\color{lightgreen}\textnormal{POST}}$ /api/friend-request/reject - Reject a friend request. \
+  **Data**: JSON object with the following field [ Authorize User ]
+  - Friend Request Id
+- ${\color{lightblue}\textnormal{GET}}$  /api/friends - List friends. [ Authorize User ]
+- ${\color{lightblue}\textnormal{GET}}$  /api/pending-requests - List pending friend requests. [ Authorize User ]

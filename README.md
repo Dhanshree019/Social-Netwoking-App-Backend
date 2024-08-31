@@ -1,5 +1,5 @@
-# Social Netwoking App Backend
-Social Netwokimg App , developed using Django Rest Framework (DRF) with essential functionalities such as user login/signup, user search, friend requests management, and user authentication.
+# Social Networking App Backend
+Social Networking App , developed using Django Rest Framework (DRF) with essential functionalities such as user login/signup, user search, friend requests management, and user authentication.
 >[![django](https://img.shields.io/badge/Django-092E20.svg?style=flat&logo=django&logoColor=white)](https://www.djangoproject.com/)
 [![python](https://img.shields.io/badge/Python-3776AB.svg?style=flat&logo=Python&logoColor=white)](https://www.python.org/)
 [![docker](https://img.shields.io/badge/Docker-2496ED.svg?style=flat&logo=Docker&logoColor=white)](https://hub.docker.com/r/zeroxeli/readme-ai)
